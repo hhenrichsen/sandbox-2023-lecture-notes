@@ -467,6 +467,39 @@ postgres database and pull the connection string down with
 We’re not quite to CI and Deployment yet, so I’m sticking local for the time
 being.
 
+### Exposing the Database to other packages
+
+Now that we can `pnpm run db:generate`, let's do that and see what happens:
+
+```
+$ pnpm run db:generate
+```
+
+This will generate a folder in the `db` package under the `lib` folder that
+contains the model and query code. To use this effectively in other packages,
+especially in dev mode (where the client can be recreated frequently), I'm going
+to use a global variable, based on the
+[prism best practices](https://pris.ly/d/help/next-js-best-practices):
+
+`packages/db/lib/prisma.ts`
+
+```ts
+// eslint-disable-next-line -- need to import the generated code
+import { PrismaClient } from "./generated/client";
+
+const globalForPrisma: { prisma?: PrismaClient } = global as unknown as {
+  prisma: PrismaClient;
+};
+
+export const prisma: PrismaClient =
+  globalForPrisma.prisma || new PrismaClient();
+
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+
+// eslint-disable-next-line import/no-default-export -- need to get dev mode working correctly
+export default prisma;
+```
+
 ### Using Docker to quickly setup local services
 
 I’m going to set up a folder to hold any docker stuff called `devops` to get us
