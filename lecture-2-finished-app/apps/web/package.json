@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm withenv next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "withenv": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@prisma/nextjs-monorepo-workaround-plugin": "^5.3.1",
+    "@tanstack/react-query": "^4.35.3",
+    "@trpc/client": "^10.38.3",
+    "@trpc/next": "^10.38.3",
+    "@trpc/react-query": "^10.38.3",
+    "@trpc/server": "^10.38.3",
+    "api": "workspace:^",
+    "db": "workspace:*",
+    "dotenv-cli": "^7.3.0",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.19",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
+  }
+}

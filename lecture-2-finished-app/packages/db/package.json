@@ -1,0 +1,38 @@
+{
+  "name": "db",
+  "version": "0.0.0",
+  "private": true,
+  "main": "lib/prisma.ts",
+  "scripts": {
+    "withenv": "dotenv -e ../../.env --",
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint . && prettier --check \"**/*.{prisma,ts,md,json}\"",
+    "format": "prettier --write \"**/*.{prisma,ts,md,json}\" && eslint --fix .",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "pnpm withenv prisma generate",
+    "db:studio": "pnpm withenv prisma studio",
+    "db:push": "pnpm withenv prisma db push --skip-generate",
+    "db:makemigration": "pnpm withenv prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.3.0",
+    "dotenv-cli": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "eslint": "^8.49.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^3.0.3",
+    "prettier-config": "workspace:*",
+    "prisma": "^5.3.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint-config-custom/library"
+    ]
+  },
+  "prettier": "prettier-config"
+}
