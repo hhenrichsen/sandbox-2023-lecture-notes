@@ -22,6 +22,9 @@
 
 ### Basic Architecture
 
+If you want to view these (and a couple more) diagrams, you can do that
+[here](https://lucid.app/lucidchart/d1393522-348f-45d7-8ab0-818b384bf713/view?page=0_0#)
+
 Here is a simple example of what an app architecture might look like:
 ![](assets/Simple%20App.png)
 
