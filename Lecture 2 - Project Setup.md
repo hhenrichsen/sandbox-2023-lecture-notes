@@ -223,7 +223,7 @@ I also want a couple packages in here:
 
 ```
 $ cd tooling/prettier-config
-$ pnpm add -S pretter @ianvs/prettier-plugin-sort-imports
+$ pnpm add -S prettier @ianvs/prettier-plugin-sort-imports
 $ pnpm add -D typescript tsconfig@workspace:*
 ```
 
