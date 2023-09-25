@@ -98,6 +98,11 @@ ground, and then shift things to be separated into concerns and bottlenecks when
 those arise. It is very easy to get caught in the hype around microservices and
 such, but those are rarely worth it from the beginning.
 
+### Packages vs Apps
+* Apps are the parts of code that actually run
+* Packages are the parts of the code that are used by the apps, but are not
+  run on their own.
+
 # Lecture 3 - Intro to Backend
 
 Backend to me is the place to start; until you have a good idea what your data
