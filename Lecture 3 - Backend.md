@@ -99,9 +99,10 @@ those arise. It is very easy to get caught in the hype around microservices and
 such, but those are rarely worth it from the beginning.
 
 ### Packages vs Apps
-* Apps are the parts of code that actually run
-* Packages are the parts of the code that are used by the apps, but are not
-  run on their own.
+
+- Apps are the parts of code that actually run
+- Packages are the parts of the code that are used by the apps, but are not run
+  on their own.
 
 # Lecture 3 - Intro to Backend
 
@@ -347,6 +348,13 @@ data from the server to the client without the client having to request it. This
 is useful for things like chat applications, or applications that need to update
 in real time, like a stock ticker.
 
+GraphQL has
+[subscriptions](https://www.apollographql.com/docs/react/data/subscriptions/#supported-subscription-protocols)
+which work either over HTTP or sockets and allow for the same realtime updates
+that sockets will allow you. They come with the disclaimer that they should be
+used for small, incremental updates, which makes sense given that's what sockets
+are good at.
+
 ### Summary
 
 | Communication Type | Description                                | Storage Type                                  |
@@ -400,7 +408,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
         <title>${post.title}</title>
         <content>${post.content}</content>
         <likes>${post.likes}</likes> 
-    </post>`,
+    </post>`
   );
 
   res.setHeader("Content-Type", "text/xml").status(200)
@@ -447,7 +455,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
       // library for converting a JS Object to XML.
       Object.entries(post)
         .map(([key, value]) => `<${key}>${value}</${key}>`)
-        .join("\n"),
+        .join("\n")
     )
     .map((post) => `<post>${post.trim()}</post>`);
 
