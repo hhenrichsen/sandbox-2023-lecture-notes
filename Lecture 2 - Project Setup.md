@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Setting Up](#setting-up)
+- [Directory Structure](#directory-structure)
+  - [Apps](#apps)
+  - [Packages](#packages)
+  - [Tooling](#tooling)
+  - [Devops](#devops)
+  - [Other files](#other-files)
+- [Initializing the Repo](#initializing-the-repo)
+- [Setting up a formatter](#setting-up-a-formatter)
+- [Adding a Database](#adding-a-database)
+  - [Using Environment Variables for Configuration](#using-environment-variables-for-configuration)
+  - [Exposing the Database to other packages](#exposing-the-database-to-other-packages)
+  - [Using Docker to quickly setup local services](#using-docker-to-quickly-setup-local-services)
+  - [Writing scripts to operate on the database](#writing-scripts-to-operate-on-the-database)
+  - [Caching the generated database files](#caching-the-generated-database-files)
+  - [Updating the formatter](#updating-the-formatter)
+- [Using the Database in our Next.js App](#using-the-database-in-our-nextjs-app)
+- [Communicating between Server and Client with tRPC](#communicating-between-server-and-client-with-trpc)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Setting Up
 
 As far as tools go for this project, I have opted to use the following:

@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [News and Housekeeping](#news-and-housekeeping)
+- [Revisiting Lecture 2 - High Level Project Overview](#revisiting-lecture-2---high-level-project-overview)
+  - [Basic Architecture](#basic-architecture)
+  - [Monorepo vs Multiple Repos](#monorepo-vs-multiple-repos)
+  - [Packages vs Apps](#packages-vs-apps)
+- [Lecture 3 - Intro to Backend](#lecture-3---intro-to-backend)
+  - [Tech Stack](#tech-stack)
+  - [Communication Technologies](#communication-technologies)
+    - [HTTP and REST](#http-and-rest)
+    - [GraphQL](#graphql)
+    - [RPC and tRPC](#rpc-and-trpc)
+    - [Honorable Mentions - Sockets](#honorable-mentions---sockets)
+    - [Summary](#summary)
+  - [ORMs and Queries](#orms-and-queries)
+  - [Demo: Adding a REST Route to my Next.js App](#demo-adding-a-rest-route-to-my-nextjs-app)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## News and Housekeeping
 
 - I have added the first assignment to Learning Suite for meeting with me. I

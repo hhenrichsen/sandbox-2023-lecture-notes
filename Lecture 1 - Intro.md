@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Introducing Hunter](#introducing-hunter)
+- [Syllabus Overview](#syllabus-overview)
+- [Grading](#grading)
+  - [Schedule](#schedule)
+- [Quick Poll](#quick-poll)
+  - [Who has already picked out a tech stack? If you have, what are you using?](#who-has-already-picked-out-a-tech-stack-if-you-have-what-are-you-using)
+  - [Who has already started working on their app?](#who-has-already-started-working-on-their-app)
+  - [Who has built some kind of software outside of assignments before?](#who-has-built-some-kind-of-software-outside-of-assignments-before)
+- [Priorities of a Startup](#priorities-of-a-startup)
+  - [Speed](#speed)
+  - [Scale](#scale)
+  - [Onboarding](#onboarding)
+- [Project Management](#project-management)
+  - [Stories / Issues / Tickets](#stories--issues--tickets)
+  - [Projects / Epics](#projects--epics)
+  - [Tech Debt](#tech-debt)
+- [Ecosystem](#ecosystem)
+  - [Next.js](#nextjs)
+  - [Monorepo](#monorepo)
+  - [Dependency Injection](#dependency-injection)
+- [Lucid Account](#lucid-account)
+- [Next Time](#next-time)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Introducing Hunter
 
 Howdy, I'm Hunter, I'm 24 and a Software Engineer and Team Lead at Lucid,
