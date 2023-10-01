@@ -408,7 +408,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
         <title>${post.title}</title>
         <content>${post.content}</content>
         <likes>${post.likes}</likes> 
-    </post>`
+    </post>`,
   );
 
   res.setHeader("Content-Type", "text/xml").status(200)
@@ -455,7 +455,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
       // library for converting a JS Object to XML.
       Object.entries(post)
         .map(([key, value]) => `<${key}>${value}</${key}>`)
-        .join("\n")
+        .join("\n"),
     )
     .map((post) => `<post>${post.trim()}</post>`);
 
