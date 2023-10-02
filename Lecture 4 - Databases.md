@@ -73,7 +73,7 @@ const AllowedFields = new Set(["title", "content", "likes"]);
 export default async function PostList(
   req: NextApiRequest,
   // Primary difference 1: We are returning a partial post list
-  res: NextApiResponse<readonly Partial<Post>[]>,
+  res: NextApiResponse<readonly Partial<Post>[]>
 ): Promise<void> {
   // Same as last time; this is pretty generic, so probably can be extracted
   // into a utility function.
@@ -111,7 +111,7 @@ const AllowedFields = new Set(["title", "content", "likes"]);
 
 export default async function PostDetail(
   req: NextApiRequest,
-  res: NextApiResponse<Partial<Post>>,
+  res: NextApiResponse<Partial<Post>>
 ): Promise<void> {
   const filter = req.query.filter;
   const parts = typeof filter === "string" ? filter.split(",") : filter;
@@ -260,6 +260,22 @@ The fundamental units of data are:
 - **Tables**, which are composed of rows and a set of typed fields
 - **Rows**, which contain values for each of the table's fields.
 
+#### Data Sample
+
+| id: `uuid`                           | email: `varchar(256)` | username: `text` | registered: `datetime`   |
+| ------------------------------------ | --------------------- | ---------------- | ------------------------ |
+| 18F041C8-2543-4066-94E4-CCF9E3B08764 | someone@nowhere.com   | someone          | 2021-10-04T00:00:00.000Z |
+
+#### Query Sample
+
+```js
+connection.execute("SELECT * from users WHERE email = ?", [
+  "someone@nowhere.com",
+]);
+```
+
+#### Reasoning
+
 Since relational databases have been around for a long time, many scaling
 problems have been solved with them. You can scale databases by adding more
 discrete databases in a process called sharding, where certain tables are split
@@ -283,6 +299,27 @@ The fundamental units of data are:
 
 - **Documents**, which are JSON that can be queried and mutated as needed.
 
+#### Data Sample
+
+```json
+{
+  "_id": "18F041C8-2543-4066-94E4-CCF9E3B08764",
+  "info": {
+    "email": "someone@nowhere.com",
+    "username": "someone"
+  },
+  "registerred": "2021-10-04T00:00:00.000Z"
+}
+```
+
+#### Query Sample
+
+```js
+connection.find({ "info.email": "someone@nowhere.com" });
+```
+
+#### Reasoning
+
 If your data is flexible and changes by user, or doesn't fit into the rigid
 types that relational database fields require, a document database may be a
 better choice. Rather than spinning up duplicate databases, most document
@@ -303,6 +340,24 @@ The fundamental units of data are:
 - **Edges** or **Relationships**, which link two nodes and hold a set of
   properties
 - **Properties**, which store information about a given node
+
+#### Data Sample
+
+```
+:Person
+id: 18F041C8-2543-4066-94E4-CCF9E3B08764
+email: someone@nowhere.com
+username: someone
+registerred: 2021-10-04T00:00:00.000Z
+```
+
+#### Query Sample
+
+```js
+connection.run(`MATCH (p:Person {username: $username})`);
+```
+
+#### Reasoning
 
 Because these are stored as graphs, there are optimizations to querying some of
 these databases that may make sense (as well as additional query types that are
@@ -464,7 +519,7 @@ compose file is doing; creating and running an init script:
 ```js
 db.getSiblingDB("admin").auth(
   process.env.MONGO_INITDB_ROOT_USERNAME,
-  process.env.MONGO_INITDB_ROOT_PASSWORD,
+  process.env.MONGO_INITDB_ROOT_PASSWORD
 );
 db.createUser({
   user: "app",
@@ -595,9 +650,9 @@ export const appRouter = router({
           const comments = await comment.find({ post: postId }).exec();
           // Add it to the returned object
           return { ...post, comments };
-        }),
+        })
       );
-    },
+    }
   ),
   addPost: publicProcedure
     .input(z.object({ title: z.string(), content: z.string() }))
@@ -617,7 +672,7 @@ export const appRouter = router({
         postId: z.string(),
         content: z.string(),
         meta: z.any().optional(),
-      }),
+      })
     )
     .mutation(async (opts) => {
       const { postId, content, meta } = opts.input;
