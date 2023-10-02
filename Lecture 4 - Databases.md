@@ -1,5 +1,27 @@
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [News and Housekeeping](#news-and-housekeeping)
+- [Feedback and Q&A Forms](#feedback-and-qa-forms)
+- [Lecture 3 Follow-Up](#lecture-3-follow-up)
+  - [Creating HTTP JSON API Routes](#creating-http-json-api-routes)
+  - [The App Router](#the-app-router)
+  - [Versioning](#versioning)
+  - [New Example App](#new-example-app)
+- [Lecture 4 - Databases](#lecture-4---databases)
+  - [Common Database Attributes](#common-database-attributes)
+    - [Relational](#relational)
+    - [Document](#document)
+    - [Graph](#graph)
+    - [Key / Value](#key--value)
+    - [Blob](#blob)
+    - [In-Memory](#in-memory)
+    - [Flatfile](#flatfile)
+  - [Database Type Resources](#database-type-resources)
+  - [Migrations](#migrations)
+  - [Demo: Adding mongoDB to our app](#demo-adding-mongodb-to-our-app)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## News and Housekeeping
 
@@ -51,7 +73,7 @@ const AllowedFields = new Set(["title", "content", "likes"]);
 export default async function PostList(
   req: NextApiRequest,
   // Primary difference 1: We are returning a partial post list
-  res: NextApiResponse<readonly Partial<Post>[]>
+  res: NextApiResponse<readonly Partial<Post>[]>,
 ): Promise<void> {
   // Same as last time; this is pretty generic, so probably can be extracted
   // into a utility function.
@@ -89,7 +111,7 @@ const AllowedFields = new Set(["title", "content", "likes"]);
 
 export default async function PostDetail(
   req: NextApiRequest,
-  res: NextApiResponse<Partial<Post>>
+  res: NextApiResponse<Partial<Post>>,
 ): Promise<void> {
   const filter = req.query.filter;
   const parts = typeof filter === "string" ? filter.split(",") : filter;
@@ -442,7 +464,7 @@ compose file is doing; creating and running an init script:
 ```js
 db.getSiblingDB("admin").auth(
   process.env.MONGO_INITDB_ROOT_USERNAME,
-  process.env.MONGO_INITDB_ROOT_PASSWORD
+  process.env.MONGO_INITDB_ROOT_PASSWORD,
 );
 db.createUser({
   user: "app",
@@ -573,9 +595,9 @@ export const appRouter = router({
           const comments = await comment.find({ post: postId }).exec();
           // Add it to the returned object
           return { ...post, comments };
-        })
+        }),
       );
-    }
+    },
   ),
   addPost: publicProcedure
     .input(z.object({ title: z.string(), content: z.string() }))
@@ -595,7 +617,7 @@ export const appRouter = router({
         postId: z.string(),
         content: z.string(),
         meta: z.any().optional(),
-      })
+      }),
     )
     .mutation(async (opts) => {
       const { postId, content, meta } = opts.input;
