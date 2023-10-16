@@ -77,14 +77,14 @@ Here's an example of what this looks like (very loosely) for OAuth. You should
 use OAuth. People trust it more, it's more straightforward, they don't have to
 remember passwords, and you don't have to worry about accidentally leaking that.
 
-![[Authentication - Page 1 (6).png]]
+![](<assets/Authentication%20-%20Page%201%20(6).png>)
 
 Once you're logged in, you can use Bearer or Session based authentication. I
 think bearer is neat because you can keep more data in there without needing to
 query the database, but sessions have worked for a long while and are very
 standard.
 
-![[Authentication - Page 1 (4).png]]
+![](<assets/Authentication%20-%20Page%201%20(4).png>)
 
 This diagram can also be accessed
 [here](https://lucid.app/documents/view/415cdb6a-57c4-4462-9880-0c9a9123d438).
