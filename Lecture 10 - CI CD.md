@@ -327,3 +327,7 @@ future. I recommend a workflow that looks like this:
 - Run tests against that environment (optional)
 - Check that your flow works in that environment
 - Merge to `main`
+
+## Homework
+
+- Do a fixup commit
