@@ -1,10 +1,12 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+# Lecture 13 - Payments and State Management
+
+- [Lecture 13 - Payments and State Management](#lecture-13---payments-and-state-management)
 - [Pre-Lecture](#pre-lecture)
   - [News and Housekeeping](#news-and-housekeeping)
-  - [Feedback and Q&A Forms](#feedback-and-qa-forms)
+  - [Feedback and Q\&A Forms](#feedback-and-qa-forms)
   - [Lecture 12 Follow-Up](#lecture-12-follow-up)
 - [Lecture 13 - Payments, State Management Part 2](#lecture-13---payments-state-management-part-2)
   - [Payments and Subscriptions](#payments-and-subscriptions)
