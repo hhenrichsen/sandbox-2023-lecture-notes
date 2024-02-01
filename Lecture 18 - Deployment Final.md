@@ -160,7 +160,9 @@ output.txt
 
 We'll be talking about [this repo](https://github.com/hhenrichsen/hx2-images).
 
-SST is fairly approachable.
+SST is fairly approachable, but is JS-only. It generates code to allow you to
+use your infrastructure in a typesafe way, and includes developer tooling. I
+think it's pretty cool.
 
 There are other tools like this, including:
 
