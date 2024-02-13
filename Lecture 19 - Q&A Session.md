@@ -67,5 +67,6 @@ Node.js API, and a Frontend as separate apps in one repo, run with Docker.
   metrics and alerts
 
 ## Reading
-
-Shoot me a slack message if this isn't here on Friday.
+- **Read:** [Microsoft: Designing Microservices Architecture](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/) -- checkout the sidebar on this one and read through the other subsections.
+- **Read:** [LogRocket: Methods for Microservice Communication](https://blog.logrocket.com/methods-for-microservice-communication/)
+- **Read:** [DHH: The Majestic Monolith](https://signalvnoise.com/svn3/the-majestic-monolith/)
