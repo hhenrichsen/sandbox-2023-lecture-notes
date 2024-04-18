@@ -1,23 +1,18 @@
+# Lecture 13 - State Management (Part 2) and Payments
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-# Lecture 13 - Payments and State Management
-
-- [Lecture 13 - Payments and State Management](#lecture-13---payments-and-state-management)
-- [Pre-Lecture](#pre-lecture)
-  - [News and Housekeeping](#news-and-housekeeping)
-  - [Feedback and Q\&A Forms](#feedback-and-qa-forms)
-  - [Lecture 12 Follow-Up](#lecture-12-follow-up)
-- [Lecture 13 - Payments, State Management Part 2](#lecture-13---payments-state-management-part-2)
-  - [Payments and Subscriptions](#payments-and-subscriptions)
-    - [Payments vs Subscriptions](#payments-vs-subscriptions)
-    - [On Providers](#on-providers)
-    - [Getting Payment Information](#getting-payment-information)
-  - [State Management Part 2: Demo](#state-management-part-2-demo)
+- [News and Housekeeping](#news-and-housekeeping)
+- [Feedback and Q&A Forms](#feedback-and-qa-forms)
+- [Lecture 12 Follow-Up](#lecture-12-follow-up)
+- [Payments and Subscriptions](#payments-and-subscriptions)
+  - [Payments vs Subscriptions](#payments-vs-subscriptions)
+  - [On Providers](#on-providers)
+  - [Getting Payment Information](#getting-payment-information)
+- [State Management Part 2: Demo](#state-management-part-2-demo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Pre-Lecture
 
 ## News and Housekeeping
 
@@ -51,8 +46,6 @@
 
 - Any questions after last time's content that y'all want to go over? Any other
   things y'all want to discuss?
-
-# Lecture 13 - Payments, State Management Part 2
 
 ## Payments and Subscriptions
 

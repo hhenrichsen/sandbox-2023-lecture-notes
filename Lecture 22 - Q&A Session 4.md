@@ -1,5 +1,21 @@
 # Lecture 22 - Q&A Session 4
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Announcements](#announcements)
+- [News](#news)
+- [Security Crash Course](#security-crash-course)
+  - [Authorization and Authentication](#authorization-and-authentication)
+  - [Auditability](#auditability)
+  - [Server Authority](#server-authority)
+  - [Security by Obscurity](#security-by-obscurity)
+  - [Rate Limiting](#rate-limiting)
+- [](#)
+- [Reading](#reading)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Announcements
 
 - HackUSU is tomorrow, I'm looking forward to seeing some of you there.

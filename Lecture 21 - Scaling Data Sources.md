@@ -5,18 +5,16 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Announcements](#announcements)
+- [News](#news)
+- [Scaling and Performance in General](#scaling-and-performance-in-general)
+- [JUG Talk Last Week - Tradeoffs in Modern Architectures](#jug-talk-last-week---tradeoffs-in-modern-architectures)
 - [Scaling Data Sources](#scaling-data-sources)
-  - [Table of Contents](#table-of-contents)
-  - [Announcements](#announcements)
-  - [News](#news)
-  - [Scaling and Performance in General](#scaling-and-performance-in-general)
-  - [JUG Talk Last Week - Tradeoffs in Modern Architectures](#jug-talk-last-week---tradeoffs-in-modern-architectures)
-  - [Scaling Data Sources](#scaling-data-sources-1)
-  - [Demo - Sharding (plus bonus Code Organization, and Fault Tolerance)](#demo---sharding-plus-bonus-code-organization-and-fault-tolerance)
-    - [Code Organization](#code-organization)
-    - [Fault Tolerance](#fault-tolerance)
-    - [Promises](#promises)
-  - [Reading](#reading)
+- [Demo - Sharding (plus bonus Code Organization, and Fault Tolerance)](#demo---sharding-plus-bonus-code-organization-and-fault-tolerance)
+  - [Code Organization](#code-organization)
+  - [Fault Tolerance](#fault-tolerance)
+  - [Promises](#promises)
+- [Reading](#reading)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

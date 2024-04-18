@@ -1,9 +1,10 @@
+# Lecture 14 - Retrospective and Q&A
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Pre-Lecture](#pre-lecture)
-  - [News and Housekeeping](#news-and-housekeeping)
-  - [Feedback and Q&A Forms](#feedback-and-qa-forms)
+- [News and Housekeeping](#news-and-housekeeping)
+- [Feedback and Q&A Forms](#feedback-and-qa-forms)
 - [Retrospective](#retrospective)
 - [Q&A](#qa)
   - [What's your suggestion on hosting? Is Vercel typically the best option for the turbo stack?](#whats-your-suggestion-on-hosting-is-vercel-typically-the-best-option-for-the-turbo-stack)
@@ -17,8 +18,6 @@
   - [For those using stripe for payments what are the pros and cons to using checkout versus stripe elements? Why did you choose to use a certain one?](#for-those-using-stripe-for-payments-what-are-the-pros-and-cons-to-using-checkout-versus-stripe-elements-why-did-you-choose-to-use-a-certain-one)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Pre-Lecture
 
 ## News and Housekeeping
 
@@ -48,7 +47,7 @@
   a biased response talking to people after class, so please help me be less
   biased!
 
-# Retrospective
+## Retrospective
 
 Let's talk about what has gone well and what has not gone well so far this
 semester.
@@ -63,9 +62,9 @@ people:
 – Norm Kerth, Project Retrospectives: A Handbook for Team Review, quoted in
 [the Retrospective Wiki](https://retrospectivewiki.org/index.php?title=The_Prime_Directive).
 
-# Q&A
+## Q&A
 
-## What's your suggestion on hosting? Is Vercel typically the best option for the turbo stack?
+### What's your suggestion on hosting? Is Vercel typically the best option for the turbo stack?
 
 With both Turbo and Next.js being owned and maintained by Vercel, Vercel is
 generally a pretty good place to start. There's cost and build system overhead
@@ -77,7 +76,7 @@ I have used each of Azure, Google Cloud, and AWS, and each of them worked for
 what I was trying to do. I think all of those can work well and cost
 effectively, especially given the startup credits they have to offer.
 
-## What are different tools we can use to run analytics on our webpages or apps? Which ones are recommended how do we implement them?
+### What are different tools we can use to run analytics on our webpages or apps? Which ones are recommended how do we implement them?
 
 [Hotjar](https://www.hotjar.com/) and [Posthog](https://posthog.com/) are the
 main ones that I've heard about that are fairly startup friendly. I want to do a
@@ -124,7 +123,7 @@ Some of these provide other tools like session replay and feature flags / AB
 tests which can also be super useful. Just make sure you're setting those up
 with good regard to users' privacy.
 
-## How do you manage using multiple different component libraries and maintaining a cohesive look? Is it best to build out a custom component base on top of these libraries for this?
+### How do you manage using multiple different component libraries and maintaining a cohesive look? Is it best to build out a custom component base on top of these libraries for this?
 
 This is part of why I'm such a big fan of the
 [shadcn/ui](https://ui.shadcn.com/) package, because it's _not_ a component
@@ -140,7 +139,7 @@ is like.
 That said, a lot of my components are built on top of a set of core components.
 Those core components are normally the ones from the library.
 
-## What are the considerations for figuring out where to store data for a mobile app (what should be local storage vs. cloud based)
+### What are the considerations for figuring out where to store data for a mobile app (what should be local storage vs. cloud based)
 
 I default to storing things on my servers, because most users like to see their
 stuff on multiple devices. Things that relate to my product, especially, or
@@ -151,7 +150,7 @@ Things like user preferences, login details, and other things that are more
 related to the current user's session should stay on their device, but I find
 most of the time things end up on the cloud.
 
-## What is missing from Flutter that makes React Native better for more complex/in-depth things?
+### What is missing from Flutter that makes React Native better for more complex/in-depth things?
 
 The benefit I see to using React Native is not one of complexity, but that my
 code is the same across my whole codebase; my backend is in TypeScript, my
@@ -170,7 +169,7 @@ web and backend app using a single language. With Flutter, this even extends to
 native apps, since dart has libraries like
 [conduit](https://github.com/conduit-dart/conduit) for server-side stuff.
 
-## Advice for storing environment variables for mobile apps?
+### Advice for storing environment variables for mobile apps?
 
 Environment variables normally are used in mobile apps as build-time environment
 variables:
@@ -185,7 +184,7 @@ things like environment variables in the system's environment is not generally
 possible for mobile apps, and including a `.env` file is more overhead than
 exposing some constants, generally.
 
-## What things do I need to do to make sure my website is optimized for SEO traffic?
+### What things do I need to do to make sure my website is optimized for SEO traffic?
 
 SEO is a big topic on its own, but some pointers:
 
@@ -199,7 +198,7 @@ SEO is a big topic on its own, but some pointers:
   sites, so having that implemented can be useful even outside of an SEO
   context.
 
-## At what point does it make sense to rewrite sections of your code that aren't the most efficient or round about way of doing things?
+### At what point does it make sense to rewrite sections of your code that aren't the most efficient or round about way of doing things?
 
 I think
 [Martin Fowler's advice on this](https://martinfowler.com/articles/workflowsOfRefactoring/#final)
@@ -213,6 +212,6 @@ need, and in that case you should run a profiler and then work on resolving the
 worst problems, but again only when performance is an issue, not just for the
 sake of making things fast.
 
-## For those using stripe for payments what are the pros and cons to using checkout versus stripe elements? Why did you choose to use a certain one?
+### For those using stripe for payments what are the pros and cons to using checkout versus stripe elements? Why did you choose to use a certain one?
 
 Any thoughts from the class on this one?

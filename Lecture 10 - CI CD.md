@@ -1,20 +1,22 @@
+# Lectrue 10 - CI, CD, and the Development Process
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [News and Housekeeping](#news-and-housekeeping)
 - [Lecture 9 Follow-Up](#lecture-9-follow-up)
-- [Lecture 10 - CI, CD, and Development Process](#lecture-10---ci-cd-and-development-process)
-  - [Continuous Integration](#continuous-integration)
-    - [Branch-based Development](#branch-based-development)
-      - [Merge Conflicts](#merge-conflicts)
-      - [Git as a Source of Truth](#git-as-a-source-of-truth)
-      - [Rebasing, Fixup Commits, and More](#rebasing-fixup-commits-and-more)
-    - [Automated Tests](#automated-tests)
-    - [Incremental Changes](#incremental-changes)
-    - [Code Reviews](#code-reviews)
-    - [GitHub Actions](#github-actions)
-  - [Continuous Delivery](#continuous-delivery)
-  - [Staging Deploys](#staging-deploys)
+- [Continuous Integration](#continuous-integration)
+  - [Branch-based Development](#branch-based-development)
+    - [Merge Conflicts](#merge-conflicts)
+    - [Git as a Source of Truth](#git-as-a-source-of-truth)
+    - [Rebasing, Fixup Commits, and More](#rebasing-fixup-commits-and-more)
+  - [Automated Tests](#automated-tests)
+  - [Incremental Changes](#incremental-changes)
+  - [Code Reviews](#code-reviews)
+  - [GitHub Actions](#github-actions)
+- [Continuous Delivery](#continuous-delivery)
+- [Staging Deploys](#staging-deploys)
+- [Homework](#homework)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -40,8 +42,6 @@
 Anything we want to revisit for frontend before we talk about CI / CD? We ran
 out of time last time. I'm happy to do another demo of some UI principles if
 that's useful to y'all.
-
-# Lecture 10 - CI, CD, and Development Process
 
 ## Continuous Integration
 

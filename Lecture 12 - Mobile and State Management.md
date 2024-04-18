@@ -1,32 +1,27 @@
+# Lecture 12 - Mobile and State Management
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with
-[DocToc](https://github.com/thlorenz/doctoc)_
-
-- [Pre-Lecture](#pre-lecture)
-  - [News and Housekeeping](#news-and-housekeeping)
-  - [Lecture 11 Follow-Up](#lecture-11-follow-up)
-- [Lecture 12 - Mobile, State Management](#lecture-12---mobile-state-management)
-  - [Native vs Hybrid vs Web](#native-vs-hybrid-vs-web)
-    - [Access](#access)
-    - [Experience](#experience)
-    - [Effort](#effort)
-    - [Market / Use Case](#market--use-case)
-  - [App Stores](#app-stores)
-    - ["Bug Fixes and Small Improvements"](#bug-fixes-and-small-improvements)
-    - [Standard Requirements](#standard-requirements)
-  - [Electron, React Native, Flutter, and Native](#electron-react-native-flutter-and-native)
-    - [Electron](#electron)
-    - [React Native](#react-native)
-    - [Flutter](#flutter)
-    - [Pure Native](#pure-native)
-  - [React Native Tools](#react-native-tools)
-  - [State Management](#state-management)
+- [News and Housekeeping](#news-and-housekeeping)
+- [Lecture 11 Follow-Up](#lecture-11-follow-up)
+- [Native vs Hybrid vs Web](#native-vs-hybrid-vs-web)
+  - [Access](#access)
+  - [Experience](#experience)
+  - [Effort](#effort)
+  - [Market / Use Case](#market--use-case)
+- [App Stores](#app-stores)
+  - ["Bug Fixes and Small Improvements"](#bug-fixes-and-small-improvements)
+  - [Standard Requirements](#standard-requirements)
+- [Electron, React Native, Flutter, and Native](#electron-react-native-flutter-and-native)
+  - [Electron](#electron)
+  - [React Native](#react-native)
+  - [Flutter](#flutter)
+  - [Pure Native](#pure-native)
+- [React Native Tools](#react-native-tools)
+- [State Management](#state-management)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Pre-Lecture
 
 ## News and Housekeeping
 
@@ -47,8 +42,6 @@
 
 - Any specific questions or things you want to talk about with this group after
   the more mixed class last time?
-
-# Lecture 12 - Mobile, State Management
 
 ## Native vs Hybrid vs Web
 

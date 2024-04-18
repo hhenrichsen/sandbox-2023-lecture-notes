@@ -1,32 +1,30 @@
+# Lecture 09 - Frontend
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with
-[DocToc](https://github.com/thlorenz/doctoc)_
-
 - [News and Housekeeping](#news-and-housekeeping)
-- [Lecture 9 - Frontend](#lecture-9---frontend)
-  - [Parts of the Frontend](#parts-of-the-frontend)
-    - [Before we Start](#before-we-start)
-    - [Frontend Frameworks](#frontend-frameworks)
-      - [The Original Ones](#the-original-ones)
-      - [The Popular Ones](#the-popular-ones)
-      - [The New Ones](#the-new-ones)
-    - [Component Libraries](#component-libraries)
-    - [CSS Frameworks](#css-frameworks)
-    - [Bundlers and More](#bundlers-and-more)
-      - [Bundlers](#bundlers)
-      - [Other Tools](#other-tools)
-      - [Build Steps](#build-steps)
-  - [Hunter's Crash Course in Design](#hunters-crash-course-in-design)
-    - [Start with Features, Not Layouts](#start-with-features-not-layouts)
-    - [Information Architecture](#information-architecture)
-    - [Design System](#design-system)
-    - [Responsive Design](#responsive-design)
-    - [Parallel Structure and the Gestalt Rules of Grouping](#parallel-structure-and-the-gestalt-rules-of-grouping)
-    - [Designing for Readability](#designing-for-readability)
-    - [Study Prior Art](#study-prior-art)
-  - [Demo: UI Design for a List](#demo-ui-design-for-a-list)
+- [Parts of the Frontend](#parts-of-the-frontend)
+  - [Before we Start](#before-we-start)
+  - [Frontend Frameworks](#frontend-frameworks)
+    - [The Original Ones](#the-original-ones)
+    - [The Popular Ones](#the-popular-ones)
+    - [The New Ones](#the-new-ones)
+  - [Component Libraries](#component-libraries)
+  - [CSS Frameworks](#css-frameworks)
+  - [Bundlers and More](#bundlers-and-more)
+    - [Bundlers](#bundlers)
+    - [Other Tools](#other-tools)
+    - [Build Steps](#build-steps)
+- [Hunter's Crash Course in Design](#hunters-crash-course-in-design)
+  - [Start with Features, Not Layouts](#start-with-features-not-layouts)
+  - [Information Architecture](#information-architecture)
+  - [Design System](#design-system)
+  - [Responsive Design](#responsive-design)
+  - [Parallel Structure and the Gestalt Rules of Grouping](#parallel-structure-and-the-gestalt-rules-of-grouping)
+  - [Designing for Readability](#designing-for-readability)
+  - [Study Prior Art](#study-prior-art)
+- [Demo: UI Design for a List](#demo-ui-design-for-a-list)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -50,8 +48,6 @@
   You have a full month to do it. Because I have to submit grades after Check-In
   3 closes, not coming to check in means 65% of your grade can't be submitted. I
   don't want to have to do that.
-
-# Lecture 9 - Frontend
 
 ## Parts of the Frontend
 

@@ -3,17 +3,17 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Lecture 23 - Dependency Injection](#lecture-23---dependency-injection)
-  - [Announcements](#announcements)
-  - [News](#news)
-  - [Code Organization](#code-organization)
-    - [Why should I organize my code?](#why-should-i-organize-my-code)
-    - [How should I organize my code?](#how-should-i-organize-my-code)
-  - [Dependency Injection](#dependency-injection)
-    - [Why not a Singleton?](#why-not-a-singleton)
-    - [Inject Your Dependencies](#inject-your-dependencies)
-  - [Reading](#reading)
-  <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+- [Announcements](#announcements)
+- [News](#news)
+- [Code Organization](#code-organization)
+  - [Why should I organize my code?](#why-should-i-organize-my-code)
+  - [How should I organize my code?](#how-should-i-organize-my-code)
+- [Dependency Injection](#dependency-injection)
+  - [Why not a Singleton?](#why-not-a-singleton)
+  - [Inject Your Dependencies](#inject-your-dependencies)
+- [Reading](#reading)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Announcements
 

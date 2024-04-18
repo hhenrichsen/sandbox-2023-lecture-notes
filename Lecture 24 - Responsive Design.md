@@ -3,16 +3,15 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Lecture 24 - Responsive Design](#lecture-24---responsive-design)
-  - [Announcements](#announcements)
-  - [News](#news)
-  - [Follow-Ups](#follow-ups)
-    - [Analytics](#analytics)
-    - [Site Performance](#site-performance)
-    - [OOP vs Functional](#oop-vs-functional)
-  - [Responsive Design](#responsive-design)
-  - [Assignment 3](#assignment-3)
-  - [Next Time](#next-time)
+- [Announcements](#announcements)
+- [News](#news)
+- [Follow-Ups](#follow-ups)
+  - [Analytics](#analytics)
+  - [Site Performance](#site-performance)
+  - [OOP vs Functional](#oop-vs-functional)
+- [Responsive Design](#responsive-design)
+- [Assignment 3](#assignment-3)
+- [Next Time](#next-time)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

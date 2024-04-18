@@ -1,23 +1,27 @@
-# Intro 2: Syllabus, Task Management, High Level Architecture
+# Lecture 15 - Intro 2: Syllabus, Task Management, High Level Architecture
 
-- [Intro 2: Syllabus, Task Management, High Level Architecture](#intro-2-syllabus-task-management-high-level-architecture)
-  - [Schedule](#schedule)
-  - [Grading](#grading)
-  - [Tech Talks](#tech-talks)
-  - [Assignments](#assignments)
-    - [Assignment 1 - CI Pipeline (6 points, Due 11:59PM February 9)](#assignment-1---ci-pipeline-6-points-due-1159pm-february-9)
-    - [Assignment 2 - Working Deployment (6 points, Due 11:59PM March 7)](#assignment-2---working-deployment-6-points-due-1159pm-march-7)
-    - [Assignment 3 - Responsive Design (6 points, Due 11:59PM March 28)](#assignment-3---responsive-design-6-points-due-1159pm-march-28)
-    - [Assignment 4 - Security (6 points, Due 11:59PM April 11)](#assignment-4---security-6-points-due-1159pm-april-11)
-  - [Make-Up Credit](#make-up-credit)
-    - [Attendance](#attendance)
-    - [Assignments](#assignments-1)
-  - [Readings](#readings)
-    - [Syllabus](#syllabus)
-      - [How this Section Works](#how-this-section-works)
-  - [Project Management](#project-management)
-  - [High-Level Architecture](#high-level-architecture)
-  - [Next Time - AWS Day 1: EC2, ECS, Lambda, and Docker](#next-time---aws-day-1-ec2-ecs-lambda-and-docker)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Schedule](#schedule)
+- [Grading](#grading)
+- [Tech Talks](#tech-talks)
+- [Assignments](#assignments)
+  - [Assignment 1 - CI Pipeline (6 points, Due 11:59PM February 9)](#assignment-1---ci-pipeline-6-points-due-1159pm-february-9)
+  - [Assignment 2 - Working Deployment (6 points, Due 11:59PM March 7)](#assignment-2---working-deployment-6-points-due-1159pm-march-7)
+  - [Assignment 3 - Responsive Design (6 points, Due 11:59PM March 28)](#assignment-3---responsive-design-6-points-due-1159pm-march-28)
+  - [Assignment 4 - Security (6 points, Due 11:59PM April 11)](#assignment-4---security-6-points-due-1159pm-april-11)
+- [Make-Up Credit](#make-up-credit)
+  - [Attendance](#attendance)
+  - [Assignments](#assignments-1)
+- [Readings](#readings)
+  - [Syllabus](#syllabus)
+    - [How this Section Works](#how-this-section-works)
+- [Project Management](#project-management)
+- [High-Level Architecture](#high-level-architecture)
+- [Next Time - AWS Day 1: EC2, ECS, Lambda, and Docker](#next-time---aws-day-1-ec2-ecs-lambda-and-docker)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Schedule
 

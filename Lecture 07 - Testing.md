@@ -1,15 +1,13 @@
+# Lecture 7 - Testing
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-**Table of Contents** _generated with
-[DocToc](https://github.com/thlorenz/doctoc)_
 
 - [Feedback and Q&A Forms](#feedback-and-qa-forms)
 - [Lecture 6 Follow-up](#lecture-6-follow-up)
   - [Webhooks for Users](#webhooks-for-users)
-- [Lecture 7 - Testing](#lecture-7---testing)
-  - [Testing an API Route](#testing-an-api-route)
-  - [Testing a tRPC Mutation](#testing-a-trpc-mutation)
+- [Testing an API Route](#testing-an-api-route)
+- [Testing a tRPC Mutation](#testing-a-trpc-mutation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,7 +57,7 @@ const UserWebhookUpdateSchema = z.object({
     email_addresses: z.array(
       z.object({
         email_address: z.string(),
-      }),
+      })
     ),
     first_name: z.string().nullable().optional(),
     last_name: z.string().nullable().optional(),
@@ -158,7 +156,7 @@ const UserWebhookUpdateSchema = z.object({
     email_addresses: z.array(
       z.object({
         email_address: z.string(),
-      }),
+      })
     ),
     first_name: z.string().nullable().optional(),
     last_name: z.string().nullable().optional(),
@@ -196,7 +194,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     const wh = new Webhook(CLERK_USER_WEBHOOK_SECRET_KEY);
     const evt = wh.verify(
       JSON.stringify(payload),
-      Object.fromEntries(request.headers.entries()),
+      Object.fromEntries(request.headers.entries())
     );
 
     // Make sure that the webhook has the expected parameters
@@ -260,13 +258,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 }
 ```
 
-# Lecture 7 - Testing
+## Testing an API Route
 
 Testing is a very important part of any application, in my opinion. Having a
 fast turnaround time on if new changes have affected critical parts of your
 application code is a very useful tool when you're trying to move fast.
-
-## Testing an API Route
 
 I'm going to add the `faker` package so that I don't need to come up with test
 data (and `vitest` and friends for those who don't have them already, although I
@@ -321,7 +317,7 @@ export class UserWebhookHandler {
       email_addresses: z.array(
         z.object({
           email_address: z.string(),
-        }),
+        })
       ),
       first_name: z.string().nullable().optional(),
       last_name: z.string().nullable().optional(),
@@ -342,11 +338,11 @@ export class UserWebhookHandler {
   ]);
   constructor(
     @inject("UserWebhookAuthorizer")
-    private readonly webhookAuthorizer: UserWebhookAuthorizer,
+    private readonly webhookAuthorizer: UserWebhookAuthorizer
   ) {}
 
   public readonly POST: (
-    request: Request,
+    request: Request
   ) => ReturnType<UserWebhookHandler["_POST"]> = this._POST.bind(this);
 
   private async _POST(request: Request): Promise<NextResponse> {
@@ -454,7 +450,7 @@ export class SvixUserWebhookAuthorizer {
       const wh = new Webhook(this.key);
       const _ = wh.verify(
         JSON.stringify(body),
-        Object.fromEntries(request.headers.entries()),
+        Object.fromEntries(request.headers.entries())
       );
       return Promise.resolve(true);
     } catch (_) {
@@ -494,7 +490,7 @@ export const serverContainer = container.createChildContainer();
 
 serverContainer.registerSingleton(
   "UserWebhookAuthorizer",
-  SvixUserWebhookAuthorizer,
+  SvixUserWebhookAuthorizer
 );
 ```
 
@@ -549,7 +545,7 @@ describe(module.id, () => {
   describe("create and delete a user", () => {
     const userId = `user_${faker.string.fromCharacters(
       "abcdefghijklmnopqrstuvwxyz0123456789",
-      27,
+      27
     )}`;
 
     it("should create a user", async () => {
@@ -695,7 +691,7 @@ import { faker } from "@faker-js/faker";
 export function withAnonContext<R extends void | Promise<void>>(
   run: (params: {
     ctx: { prisma: typeof prisma; auth: SignedOutAuthObject };
-  }) => R,
+  }) => R
 ): R {
   return run({
     ctx: {
@@ -728,11 +724,11 @@ export async function withAuthContext<R>(
     };
   }) => R,
   authPartial?: Partial<Exclude<SignedInAuthObject, "userId">>,
-  userPartial?: Partial<Exclude<Exclude<User, "id">, "email_addresses">>,
+  userPartial?: Partial<Exclude<Exclude<User, "id">, "email_addresses">>
 ): R {
   const userId = `user_${faker.string.fromCharacters(
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
-    27,
+    27
   )}`;
 
   const firstName = faker.person.firstName();

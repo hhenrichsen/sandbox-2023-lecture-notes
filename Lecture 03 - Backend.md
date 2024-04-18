@@ -1,3 +1,5 @@
+# Lecture 03 - Backend
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -6,16 +8,14 @@
   - [Basic Architecture](#basic-architecture)
   - [Monorepo vs Multiple Repos](#monorepo-vs-multiple-repos)
   - [Packages vs Apps](#packages-vs-apps)
-- [Lecture 3 - Intro to Backend](#lecture-3---intro-to-backend)
-  - [Tech Stack](#tech-stack)
-  - [Communication Technologies](#communication-technologies)
-    - [HTTP and REST](#http-and-rest)
-    - [GraphQL](#graphql)
-    - [RPC and tRPC](#rpc-and-trpc)
-    - [Honorable Mentions - Sockets](#honorable-mentions---sockets)
-    - [Summary](#summary)
-  - [ORMs and Queries](#orms-and-queries)
-  - [Demo: Adding a REST Route to my Next.js App](#demo-adding-a-rest-route-to-my-nextjs-app)
+- [Tech Stack](#tech-stack)
+- [Communication Technologies](#communication-technologies)
+  - [HTTP and REST](#http-and-rest)
+  - [GraphQL](#graphql)
+  - [RPC and tRPC](#rpc-and-trpc)
+  - [Honorable Mentions - Sockets](#honorable-mentions---sockets)
+  - [Summary](#summary)
+- [ORMs and Queries](#orms-and-queries)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -124,8 +124,6 @@ such, but those are rarely worth it from the beginning.
 - Apps are the parts of code that actually run
 - Packages are the parts of the code that are used by the apps, but are not run
   on their own.
-
-# Lecture 3 - Intro to Backend
 
 Backend to me is the place to start; until you have a good idea what your data
 is going to look like and how you are going to interact with that data, you will
@@ -411,10 +409,6 @@ I like Primsa because it gives me type safe queries, and lets me move quickly in
 development using the push command, while still keeping me safe in production
 using migrations.
 
-## Demo: Adding a REST Route to my Next.js App
-
-First, I'm going to add a file to the `pages/api` folder called `xml.tsx`:
-
 `xml.tsx`
 
 ```tsx
@@ -429,7 +423,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
         <title>${post.title}</title>
         <content>${post.content}</content>
         <likes>${post.likes}</likes> 
-    </post>`,
+    </post>`
   );
 
   res.setHeader("Content-Type", "text/xml").status(200)
@@ -476,7 +470,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<string>) => {
       // library for converting a JS Object to XML.
       Object.entries(post)
         .map(([key, value]) => `<${key}>${value}</${key}>`)
-        .join("\n"),
+        .join("\n")
     )
     .map((post) => `<post>${post.trim()}</post>`);
 

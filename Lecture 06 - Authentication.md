@@ -1,15 +1,16 @@
+# Lecture 06 - Authentication
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [News and Housekeeping](#news-and-housekeeping)
 - [Feedback and Q&A Forms](#feedback-and-qa-forms)
-- [Lecture 6 - Authentication](#lecture-6---authentication)
-  - [Resources and AAA](#resources-and-aaa)
-    - [Resources](#resources)
-    - [Authentication](#authentication)
-    - [Authorization](#authorization)
-    - [Accounting](#accounting)
-  - [Demo: Authenticating with Clerk](#demo-authenticating-with-clerk)
+- [Resources and AAA](#resources-and-aaa)
+  - [Resources](#resources)
+  - [Authentication](#authentication)
+  - [Authorization](#authorization)
+  - [Accounting](#accounting)
+- [Demo: Authenticating with Clerk](#demo-authenticating-with-clerk)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -30,8 +31,6 @@
   my best to apply what I can from here to my next lectures. I know I'm getting
   a biased response talking to people after class, so please help me be less
   biased!
-
-# Lecture 6 - Authentication
 
 ## Resources and AAA
 
@@ -172,7 +171,7 @@ export const createContextInner = async ({ auth }: AuthContext) => {
 };
 
 export const createContext = async (
-  opts: trpcNext.CreateNextContextOptions,
+  opts: trpcNext.CreateNextContextOptions
 ) => {
   return await createContextInner({ auth: getAuth(opts.req) });
 };
@@ -505,9 +504,9 @@ export const appRouter = router({
           const postId = post.id;
           const comments = await comment.find({ post: postId }).exec();
           return { ...post, comments };
-        }),
+        })
       );
-    },
+    }
   ),
   postDetail: publicProcedure.input(z.string()).mutation(async (opts) => {
     const postId = opts.input;
@@ -525,7 +524,7 @@ export const appRouter = router({
       z.object({
         slug: z.string(),
         name: z.string(),
-      }),
+      })
     )
     .mutation(async (opts) => {
       prisma.user.create({
@@ -542,7 +541,7 @@ export const appRouter = router({
         title: z.string(),
         content: z.string(),
         draft: z.boolean().optional(),
-      }),
+      })
     )
     .mutation(async (opts) => {
       const { title, content } = opts.input;
@@ -565,7 +564,7 @@ export const appRouter = router({
         title: z.string().optional(),
         content: z.string().optional(),
         draft: z.boolean().optional(),
-      }),
+      })
     )
     .mutation(async (opts) => {
       const { id, title, content, draft } = opts.input;

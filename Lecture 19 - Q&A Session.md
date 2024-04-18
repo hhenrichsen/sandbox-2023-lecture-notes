@@ -1,6 +1,7 @@
+# Lecture 19 - Q&A Session 3
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Announcements](#announcements)
 - [News / Articles](#news--articles)
@@ -67,6 +68,11 @@ Node.js API, and a Frontend as separate apps in one repo, run with Docker.
   metrics and alerts
 
 ## Reading
-- **Read:** [Microsoft: Designing Microservices Architecture](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/) -- checkout the sidebar on this one and read through the other subsections.
-- **Read:** [LogRocket: Methods for Microservice Communication](https://blog.logrocket.com/methods-for-microservice-communication/)
-- **Read:** [DHH: The Majestic Monolith](https://signalvnoise.com/svn3/the-majestic-monolith/)
+
+- **Read:**
+  [Microsoft: Designing Microservices Architecture](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/)
+  -- checkout the sidebar on this one and read through the other subsections.
+- **Read:**
+  [LogRocket: Methods for Microservice Communication](https://blog.logrocket.com/methods-for-microservice-communication/)
+- **Read:**
+  [DHH: The Majestic Monolith](https://signalvnoise.com/svn3/the-majestic-monolith/)

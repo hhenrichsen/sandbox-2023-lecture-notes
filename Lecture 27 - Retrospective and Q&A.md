@@ -3,18 +3,17 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Lecture 27 - Retrospective and Q&A](#lecture-27---retrospective-and-qa)
-  - [Announcements](#announcements)
-  - [News](#news)
-  - [Extra Credit](#extra-credit)
-  - [Retrospective](#retrospective)
-  - [Security Addendum](#security-addendum)
-    - [Supply Chain Attacks](#supply-chain-attacks)
-    - [Third Party Vulnerabilities](#third-party-vulnerabilities)
-    - [Secrets Leaking](#secrets-leaking)
-    - [Hack This Site](#hack-this-site)
-    - [Your Own Audits and Bug Bounties](#your-own-audits-and-bug-bounties)
-  - [Q&A](#qa)
+- [Announcements](#announcements)
+- [News](#news)
+- [Extra Credit](#extra-credit)
+- [Retrospective](#retrospective)
+- [Security Addendum](#security-addendum)
+  - [Supply Chain Attacks](#supply-chain-attacks)
+  - [Third Party Vulnerabilities](#third-party-vulnerabilities)
+  - [Secrets Leaking](#secrets-leaking)
+  - [Hack This Site](#hack-this-site)
+  - [Your Own Audits and Bug Bounties](#your-own-audits-and-bug-bounties)
+- [Q&A](#qa)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -42,6 +41,9 @@
   (and some [other](https://mrbruh.com/chattr/), similar vulns)
 - [Amazon stops Cashierless Grocery](https://arstechnica.com/gadgets/2024/04/amazon-ends-ai-powered-store-checkout-which-needed-1000-video-reviewers/)
 - [Bun 1.1](https://bun.sh/blog/bun-v1.1)
+- [pg paper dump](https://supabase.com/blog/pg-paper-dump)
+- [Google incognito tracking lawsuit](https://www.npr.org/2024/04/01/1242019127/google-incognito-mode-settlement-search-history)
+- [Princeton AI Software Engineering Tool](https://anakin.ai/blog/swe-agent/)
 
 ## Extra Credit
 
